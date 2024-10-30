@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "CINEMA_FRONTEND:build:production"
+              "buildTarget": "CINEMA_FRONTEND:build:production"
             },
             "development": {
-              "browserTarget": "CINEMA_FRONTEND:build:development"
+              "buildTarget": "CINEMA_FRONTEND:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CINEMA_FRONTEND:build"
+            "buildTarget": "CINEMA_FRONTEND:build"
           }
         },
         "test": {
