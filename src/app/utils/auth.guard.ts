@@ -29,7 +29,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
         if(expectedRole){
           const tokenData = this.accountService.getTokenData();
   
-          if (!expectedRole?.includes(tokenData?.role)) {
+          if (expectedRole?.includes(tokenData?.role)) {
     
             Swal.fire(
               {
